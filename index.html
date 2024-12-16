@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS and Tailwind CSS Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom CSS */
+    .custom-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .custom-card:hover {
+      transform: scale(1.05);
+    }
+
+    .gradient-bg {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-100 text-gray-800">
+  <header class="bg-blue-600 text-white py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">CSS & Tailwind Showcase</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#typography" class="hover:underline">Typography</a></li>
+          <li><a href="#buttons" class="hover:underline">Buttons</a></li>
+          <li><a href="#forms" class="hover:underline">Forms</a></li>
+          <li><a href="#grid" class="hover:underline">Grid</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-8 px-4">
+    <!-- Typography -->
+    <section id="typography" class="mb-12">
+      <h2 class="text-3xl font-bold mb-4">Typography</h2>
+      <p class="mb-4">This is an example of regular paragraph text styled with Tailwind classes. It's easy to adjust spacing, font sizes, and colors.</p>
+      <p class="text-lg font-semibold text-blue-600">Highlighted Text Example</p>
+    </section>
+
+    <!-- Buttons -->
+    <section id="buttons" class="mb-12">
+      <h2 class="text-3xl font-bold mb-4">Buttons</h2>
+      <div class="space-x-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Primary</button>
+        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Success</button>
+        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Danger</button>
+      </div>
+    </section>
+
+    <!-- Forms -->
+    <section id="forms" class="mb-12">
+      <h2 class="text-3xl font-bold mb-4">Forms</h2>
+      <form class="space-y-4">
+        <div>
+          <label for="name" class="block text-gray-700">Name</label>
+          <input type="text" id="name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring focus:ring-blue-300">
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring focus:ring-blue-300">
+        </div>
+        <div>
+          <label for="message" class="block text-gray-700">Message</label>
+          <textarea id="message" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring focus:ring-blue-300"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+      </form>
+    </section>
+
+    <!-- Grid -->
+    <section id="grid" class="mb-12">
+      <h2 class="text-3xl font-bold mb-4">Grid</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="custom-card p-4 bg-white shadow">Grid Item 1</div>
+        <div class="custom-card p-4 bg-white shadow">Grid Item 2</div>
+        <div class="custom-card p-4 bg-white shadow">Grid Item 3</div>
+        <div class="custom-card p-4 bg-white shadow">Grid Item 4</div>
+        <div class="custom-card p-4 bg-white shadow">Grid Item 5</div>
+        <div class="custom-card p-4 bg-white shadow">Grid Item 6</div>
+      </div>
+    </section>
+
+    <!-- Utilities -->
+    <section id="utilities">
+      <h2 class="text-3xl font-bold mb-4">Utilities</h2>
+      <div class="p-4 bg-gray-200 rounded shadow-md gradient-bg text-white">
+        This is a utility-based component using both Tailwind utilities and custom CSS.
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
